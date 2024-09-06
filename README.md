@@ -4,6 +4,17 @@
 
 NetGent (Network Agent) is a powerful, functional API for designing multi-agent graph systems. Inspired by the functional APIs of LangGraph/LangChain and Keras/PyTorch, NetGent simplifies the creation of complex AI ecosystems.
 
+## 📐 Design Architectures
+
+### Sequential Processing
+The sequential processing workflow chains multiple agents for step-by-step processing, where each agent's output becomes the input for the next agent.
+
+### Parallel Processing
+The parallel processing workflow executes multiple agents concurrently, where each agent processes the initial state independently.
+
+### Aggregated Parallel Processing
+The parallel processing workflow executes multiple agents concurrently, where each agent processes the initial state independently.
+
 ## 🌟 Features
 
 - **Simplified Multi-Agent Systems**: Create and manage multi-agent systems with ease.
@@ -13,7 +24,6 @@ NetGent (Network Agent) is a powerful, functional API for designing multi-agent 
 - **Prompt Engineering Made Easy**: Implement advanced prompt techniques without complexity.
 
 ## 🚀 Quick Start
-
 ```python
 from netgent import llm, response_average, sequential, parallel
 
@@ -39,10 +49,17 @@ pip install netgent
 
 ## 🗺 Roadmap
 
-1. Develop NetGent Core with Gen AI capabilities
-2. Add PyTorch compatibility for foundational models
-3. Migrate core components to low-level systems (Zig/C)
-4. Continuous improvement and community engagement
+1. Develop NetGent Core functionality (v1.0.0)
+   - Implement various prompt types
+   - Enable different calling patterns (sequential, parallel, skip connections)
+   - Ensure robust support for complex multi-agent LLM architectures (text-based)
+
+2. Expand multi-agent capabilities with multimodality (v2.0.0)
+   - Add vision agents
+   - Integrate speech-to-text agents
+   - Enhance multi-agent architectures with multimodal support
+
+Note: All agents will adhere to the NetGent philosophy, maintaining a consistent `invoke(state) -> state` interface.
 
 ## 💡 Philosophy
 
