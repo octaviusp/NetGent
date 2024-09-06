@@ -1,0 +1,18 @@
+# Start of Selection
+[tool.poetry]
+name = "netgent"
+version = "0.1.0"
+description = "NetGent (Network Agent) is a functional API to design multi-agent graph systems."
+authors = ["Octavio Pavon <octaviopavon7@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.2.16"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+# End of Selection
