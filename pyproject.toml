@@ -7,7 +7,12 @@ authors = ["Octavio Pavon <octaviopavon7@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-langchain = "^0.2.16"
+langchain-openai = "^0.2.2"
+langchain-groq = "^0.2.0"
+langchain-anthropic = "^0.2.3"
+langchain-google-vertexai = "^2.0.5"
+python-dotenv = "^1.0.1"
+langgraph = "^0.2.38"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
