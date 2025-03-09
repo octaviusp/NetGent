@@ -15,5 +15,17 @@ def main() -> None:
     
     print(f"Final state: {final_state.data}")
 
+def test_main() -> None:
+    """
+   A functino to test the main functionality!    """
+    initial_state = State({"input": "Hello, NetGent!"})
+    
+    llm1 = LLM("gpt-3.5-turbo")
+    llm2 = LLM("gpt-4")
+    
+    final_state = sequential([llm1, llm2], initial_state)
+    
+    print(f"Final state: {final_state.data}")
+
 if __name__ == "__main__":
     main()
