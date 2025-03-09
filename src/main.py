@@ -8,26 +8,12 @@ def main() -> None:
     """
     initial_state = State({"input": "Hello, NetGent!"})
     
-    llm1 = LLM("gpt-3.5-turbo")
-    llm2 = LLM("gpt-4")
+    llm1 = LLM("gpt-5-turbo")
+    llm2 = LLM("gpt5")
     
     final_state = sequential([llm1, llm2], initial_state)
     
     print(f"Final state: {final_state.data}")
-
-
-
-def test_main() -> None:
-    """
-   A functino to test the main functionality!    """
-    initial_state = State({"input": "Hello, NetGent!"})
-    
-    llm1 = LLM("gpt-3.5-turbo")
-    llm2 = LLM("gpt-4")
-    
-    final_state = sequential([llm1, llm2], initial_state)
-    
-    print(f"Final state: {final_state.data}")
-
+# REMOVE TEST MAIN BECAUSE IS NOT NECESARY
 if __name__ == "__main__":
     main()
